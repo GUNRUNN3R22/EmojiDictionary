@@ -20,11 +20,64 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="WIu-Yn-BdB">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="WIu-Yn-BdB" secondAttribute="trailing" id="4dK-28-d2Q"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="WIu-Yn-BdB" secondAttribute="bottom" id="lZf-ta-bm6"/>
+                            <constraint firstItem="WIu-Yn-BdB" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="lyp-ZE-buL"/>
+                            <constraint firstItem="WIu-Yn-BdB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="uzY-0U-uzF"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emojiTableView" destination="WIu-Yn-BdB" id="qjA-op-hM3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ZIN-dl-cAm">
+            <objects>
+                <viewController id="03K-Gb-Std" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8o3-Rv-mjx"/>
+                        <viewControllerLayoutGuide type="bottom" id="yLM-BE-iXf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WTd-9y-Tlb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="💒" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SZ6-sj-7Ya">
+                                <rect key="frame" x="78.5" y="60" width="218" height="239"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="200"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GDp-Qt-rFF">
+                                <rect key="frame" x="166" y="339" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="GDp-Qt-rFF" firstAttribute="top" secondItem="SZ6-sj-7Ya" secondAttribute="bottom" constant="40" id="7LF-RZ-yOl"/>
+                            <constraint firstItem="SZ6-sj-7Ya" firstAttribute="centerX" secondItem="WTd-9y-Tlb" secondAttribute="centerX" id="8vS-Sp-Rtj"/>
+                            <constraint firstItem="GDp-Qt-rFF" firstAttribute="centerX" secondItem="WTd-9y-Tlb" secondAttribute="centerX" id="X2J-yn-2IY"/>
+                            <constraint firstItem="SZ6-sj-7Ya" firstAttribute="top" secondItem="8o3-Rv-mjx" secondAttribute="bottom" constant="40" id="kvF-av-L2C"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NBl-PZ-LPX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1198" y="36"/>
         </scene>
     </scenes>
 </document>
