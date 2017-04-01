@@ -57,7 +57,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="💒" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SZ6-sj-7Ya">
-                                <rect key="frame" x="78.5" y="104" width="218" height="239"/>
+                                <rect key="frame" x="79" y="104" width="218" height="239"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="200"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -68,18 +68,36 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tn8-Z8-Dr0">
+                                <rect key="frame" x="167" y="444" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uun-TG-e51">
+                                <rect key="frame" x="167" y="505" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="Uun-TG-e51" firstAttribute="top" secondItem="tn8-Z8-Dr0" secondAttribute="bottom" constant="40" id="2ba-bp-jwv"/>
                             <constraint firstItem="GDp-Qt-rFF" firstAttribute="top" secondItem="SZ6-sj-7Ya" secondAttribute="bottom" constant="40" id="7LF-RZ-yOl"/>
                             <constraint firstItem="SZ6-sj-7Ya" firstAttribute="centerX" secondItem="WTd-9y-Tlb" secondAttribute="centerX" id="8vS-Sp-Rtj"/>
+                            <constraint firstItem="tn8-Z8-Dr0" firstAttribute="centerX" secondItem="WTd-9y-Tlb" secondAttribute="centerX" id="P4E-Qk-k5T"/>
                             <constraint firstItem="GDp-Qt-rFF" firstAttribute="centerX" secondItem="WTd-9y-Tlb" secondAttribute="centerX" id="X2J-yn-2IY"/>
+                            <constraint firstItem="Uun-TG-e51" firstAttribute="centerX" secondItem="WTd-9y-Tlb" secondAttribute="centerX" id="cU6-8W-fzq"/>
+                            <constraint firstItem="tn8-Z8-Dr0" firstAttribute="top" secondItem="GDp-Qt-rFF" secondAttribute="bottom" constant="40" id="gT4-4V-ivH"/>
                             <constraint firstItem="SZ6-sj-7Ya" firstAttribute="top" secondItem="8o3-Rv-mjx" secondAttribute="bottom" constant="40" id="kvF-av-L2C"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="emojiCategoryLabel" destination="tn8-Z8-Dr0" id="dpo-RR-kSY"/>
                         <outlet property="emojiDisplay" destination="SZ6-sj-7Ya" id="N1n-Ui-tpr"/>
                         <outlet property="emojiLabel" destination="GDp-Qt-rFF" id="AxL-US-xhn"/>
+                        <outlet property="emojiYearLabel" destination="Uun-TG-e51" id="3NV-uz-XgY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NBl-PZ-LPX" userLabel="First Responder" sceneMemberID="firstResponder"/>
